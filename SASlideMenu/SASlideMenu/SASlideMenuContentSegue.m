@@ -65,7 +65,7 @@
     //We do that after switchToContentViewController.
     //because we need destination.parentViewController to be initialized.
     if (hasRightMenu) {
-        [destination performSegueWithIdentifier:@"rightMenu" sender:rootController];
+        [destination.visibleViewController performSegueWithIdentifier:@"rightMenu" sender:rootController];
     }
     
     Boolean disablePanGesture= NO;

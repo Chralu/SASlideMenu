@@ -11,10 +11,10 @@
 #import "SASlideMenuRightMenuViewController.h"
 @implementation SASlideMenuRightMenuSegue
 -(void) perform{
-    UINavigationController* source = self.sourceViewController;
+    UIViewController* source = self.sourceViewController;
     
     SASlideMenuRightMenuViewController* rightMenuViewController = self.destinationViewController;
-    SASlideMenuRootViewController* rootViewController = (SASlideMenuRootViewController*)source.parentViewController;
+    SASlideMenuRootViewController* rootViewController = (SASlideMenuRootViewController*)source.navigationController.parentViewController;
     
     rootViewController.rightMenu = rightMenuViewController;
     rightMenuViewController.rootController = rootViewController;

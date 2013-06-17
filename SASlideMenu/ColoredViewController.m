@@ -21,16 +21,17 @@
     return self;
 }
 
--(void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
-    ColoredDetailViewController* detailViewConroller = segue.destinationViewController;
-    UIColor* backgroundColor = self.view.backgroundColor;
-    CGFloat hue, brightness, saturation,alpha;
-    [backgroundColor getHue:&hue saturation:&saturation brightness:&brightness alpha:&alpha];
-    detailViewConroller.hueValue = hue;
-    detailViewConroller.brightnessValue = brightness;
-    detailViewConroller.saturationValue = saturation;
-    detailViewConroller.color = backgroundColor;
-
+-(void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    if ([segue.identifier isEqualToString:@"detail"]) {
+        ColoredDetailViewController* detailViewConroller = segue.destinationViewController;
+        UIColor* backgroundColor = self.view.backgroundColor;
+        CGFloat hue, brightness, saturation,alpha;
+        [backgroundColor getHue:&hue saturation:&saturation brightness:&brightness alpha:&alpha];
+        detailViewConroller.hueValue = hue;
+        detailViewConroller.brightnessValue = brightness;
+        detailViewConroller.saturationValue = saturation;
+        detailViewConroller.color = backgroundColor;
+    }
 }
 -(void) tap{
     [self performSegueWithIdentifier:@"detail" sender:self];

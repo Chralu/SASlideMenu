@@ -57,7 +57,6 @@
                     </navigationBar>
                     <connections>
                         <segue destination="HtD-61-xbj" kind="relationship" relationship="rootViewController" id="JVz-jA-53y"/>
-                        <segue destination="rrC-Sx-iYh" kind="custom" identifier="rightMenu" customClass="SASlideMenuRightMenuSegue" id="GWD-h3-jrA"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="V3b-gy-gAJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -170,7 +169,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Iua-QE-4zp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-302" y="-2666"/>
+            <point key="canvasLocation" x="224" y="-2642"/>
         </scene>
         <!--Colored View Controller-->
         <scene sceneID="qA0-uM-L4H">
@@ -185,6 +184,7 @@
                     <navigationItem key="navigationItem" id="87K-ve-LG1"/>
                     <connections>
                         <segue destination="NH4-Ii-BTF" kind="push" identifier="detail" id="bxH-Qf-gKk"/>
+                        <segue destination="rrC-Sx-iYh" kind="custom" identifier="rightMenu" customClass="SASlideMenuRightMenuSegue" id="ATp-qc-F7s"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YV9-ly-AmG" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -318,7 +318,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IMv-df-JIb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="150" y="-3337"/>
+            <point key="canvasLocation" x="224" y="-3337"/>
         </scene>
         <!--Slide Menu Root View Controller-->
         <scene sceneID="TLR-0O-KYb">
@@ -355,7 +355,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="H5P-XR-3pz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="251" y="-2666"/>
+            <point key="canvasLocation" x="777" y="-2648"/>
         </scene>
         <!--First View Controller - First-->
         <scene sceneID="TNw-QM-uGb">
@@ -382,7 +382,7 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="709" y="-2666"/>
+            <point key="canvasLocation" x="1235" y="-2648"/>
         </scene>
         <!--View Controller - Second-->
         <scene sceneID="x35-Yi-yGC">
@@ -398,7 +398,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Qeb-7W-4qG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1086" y="-2666"/>
+            <point key="canvasLocation" x="1612" y="-2648"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="M1I-vl-ZA6">
@@ -410,7 +410,6 @@
                     </navigationBar>
                     <connections>
                         <segue destination="waD-kN-2Ac" kind="relationship" relationship="rootViewController" id="j4N-nd-v2A"/>
-                        <segue destination="b4t-2x-5pz" kind="custom" identifier="rightMenu" customClass="SASlideMenuRightMenuSegue" id="cri-0h-NaC"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fTb-hQ-7f3" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -427,6 +426,9 @@
                         <color key="backgroundColor" red="0.25098040700000002" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <navigationItem key="navigationItem" id="ICt-Bg-cr1"/>
+                    <connections>
+                        <segue destination="b4t-2x-5pz" kind="custom" identifier="rightMenu" customClass="SASlideMenuRightMenuSegue" id="9jS-j0-Fse"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bHu-jm-7mi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -442,7 +444,6 @@
                     </navigationBar>
                     <connections>
                         <segue destination="xmv-IJ-xC8" kind="relationship" relationship="rootViewController" id="Frc-uM-4k8"/>
-                        <segue destination="b4t-2x-5pz" kind="custom" identifier="rightMenu" customClass="SASlideMenuRightMenuSegue" id="7aE-cu-dQs"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="d3j-hP-jQd" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -459,6 +460,9 @@
                         <color key="backgroundColor" red="0.0" green="0.58285812039999996" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <navigationItem key="navigationItem" id="gxN-xO-VoN"/>
+                    <connections>
+                        <segue destination="b4t-2x-5pz" kind="custom" identifier="rightMenu" customClass="SASlideMenuRightMenuSegue" id="HDw-73-0zj"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QHq-Il-fdE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -542,7 +546,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4g6-yy-do9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="112" y="-1250"/>
+            <point key="canvasLocation" x="250" y="-1318"/>
         </scene>
     </scenes>
     <resources>
@@ -594,6 +598,6 @@
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="7aE-cu-dQs"/>
+        <segue reference="HDw-73-0zj"/>
     </inferredMetricsTieBreakers>
 </document>
